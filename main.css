@@ -1,0 +1,147 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Material Icon Styling */
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.menu {
+    padding: 12px;
+    height: 24px;
+    width: 24px;
+}
+.search {
+    padding-left: 12px;
+    height: 24px;
+    width: 24px;
+}
+.arrow_drop_down {
+    padding: 12px;
+    height: 24px;
+    width: 24px;
+}
+.contact_support {
+    padding: 12px;
+    height: 24px;
+    width: 24px;
+}
+.apps {
+    padding: 12px;
+    height: 24px;
+    width: 24px;
+}
+
+
+/* Top Nav Bar */
+#topNav {
+    border-bottom: 1px solid black;
+    border-width: 90%;
+    height: 9vh;
+    width: 100%;
+    
+    /* Flexbox Styling */
+    display: flex;
+    flex-direction: ltr;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#searchBar {
+    background-color: #f1f3f4;
+    border-radius: .5em;
+    height: 3em;
+    width: 55vw;
+    
+    /* Flexbox Styling */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* Gmail Logo */
+#gmailLogo {
+    height: 40px;
+    padding-left: 16px;
+    padding-right: 10%;
+}
+
+#profilePhoto {
+    height: 40px;
+    width: 40px;
+    border-radius: 50% 50% 50% 50%;
+    border-width: 5px 5px 5px 5px;
+    border-top-color: #e92c18;
+    border-right-color: #3174f1;
+    border-bottom-color: #239a41;
+    border-left-color: #f6ad01;
+}
+
+/* Container Div */
+#mainNav {
+    height: 91vh;
+    width: 100%;
+
+    /* Flexbox Styling */
+    display: flex;
+    flex-direction: ltr;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+
+/* Left Sidebar */
+#sidebarLeft {
+    border-right: 1px solid black;
+
+    /* Flexbox Styling */
+    display: flex;
+    flex-direction: ltr;
+    justify-content: center;
+    flex-basis: 5%;
+    float: left;
+}
+
+/* Center Area */
+#centerArea {
+
+
+    /* Flexbox Styling */
+    display: flex;
+    flex-direction: ltr;
+    justify-content: center;  
+    flex-basis: 90%;  
+
+}
+
+/* Right Sidebar */
+#sidebarRight {
+    border-left: 1px solid black;
+
+    /* Flexbox Styling */
+    display: flex;
+    flex-direction: ltr;
+    justify-content: center;
+    flex-basis: 5%;
+    float: right;  
+
+}
