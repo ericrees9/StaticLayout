@@ -28,14 +28,20 @@ body {
     width: 24px;
 }
 .search {
-    padding-left: 12px;
+    padding: 12px;
     height: 24px;
     width: 24px;
+    float: left;
+    left: 50px;
+    justify-self: left;
+    left-margin: 40px;
 }
 .arrow_drop_down {
     padding: 12px;
     height: 24px;
     width: 24px;
+    float: right;
+    justify-self: left;
 }
 .contact_support {
     padding: 12px;
@@ -43,7 +49,8 @@ body {
     width: 24px;
 }
 .apps {
-    padding: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
     height: 24px;
     width: 24px;
 }
@@ -51,7 +58,7 @@ body {
 
 /* Top Nav Bar */
 #topNav {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #eceff1;
     border-width: 90%;
     height: 9vh;
     width: 100%;
@@ -64,17 +71,42 @@ body {
     align-items: center;
 
 }
+#leftTopNav {
+    float: left;
+
+    /* Flexbox Styling */
+    display: flex;
+    flex-direction: ltr;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#centerTopNav {
+
+}
+#rightTopNav {
+    float: right;
+
+    /* Flexbox Styling */
+    display: flex;
+    flex-direction: rtl;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
 
 #searchBar {
     background-color: #f1f3f4;
     border-radius: .5em;
     height: 3em;
     width: 55vw;
+    margin-left: 9em;
+    margin-right: 5em;
     
     /* Flexbox Styling */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 
 }
 
@@ -89,7 +121,7 @@ body {
     height: 40px;
     width: 40px;
     border-radius: 50% 50% 50% 50%;
-    border-width: 5px 5px 5px 5px;
+    border-width: 10px 10px 10px 10px;
     border-top-color: #e92c18;
     border-right-color: #3174f1;
     border-bottom-color: #239a41;
@@ -111,7 +143,7 @@ body {
 
 /* Left Sidebar */
 #sidebarLeft {
-    border-right: 1px solid black;
+    border-right: 1px solid #eceff1;
 
     /* Flexbox Styling */
     display: flex;
@@ -127,15 +159,111 @@ body {
 
     /* Flexbox Styling */
     display: flex;
-    flex-direction: ltr;
+    flex-direction: column;
     justify-content: center;  
-    flex-basis: 90%;  
+    flex-basis: 95%;  
+    flex-wrap: wrap;
+    align-items: flex-start;
+    position: relative;
+}
 
+.emailBox {
+    width: 95%;
+    height: 2em;
+    border-top: 1px solid #eceff1;
+    border-bottom: 1px solid #eceff1;
+    padding: 0;
+    margin-left: 1em;
+    border-collapse: collapse;
+}
+
+/* Table Styling */
+
+.checkBox {
+    width: 4%;
+    height: 100%;
+    padding: 5px;
+}
+
+.star {
+    width: 3%;
+    height: 100%;
+    padding: 5px;
+}
+
+.priorityBox {
+    width: 3%;
+    height: 100%;
+    padding: 5px;
+}
+
+.nameBox {
+    width: 15%;
+    height: 100%;
+    padding: 5px;
+}
+
+.emailContent {
+    width: 55%;
+    height: 100%;
+    padding: 5px;
+}
+
+.attachmentBox {
+    width: 5%;
+    height: 100%;
+    padding: 5px;
+}
+
+.dateBox {
+    width: 10%;
+    height: 100%;
+    padding: 5px;
+}
+
+/* Center Toolbox Styling */
+#toolBar {
+    width: 95%;
+    height: 2em;
+    padding: 2px;
+    margin: 0;
+}
+
+.toolcheckBox {
+
+}
+
+.toolRewind {
+
+}
+
+.toolMenu {
+
+}
+
+.toolEmpty {
+
+}
+
+.toolEmailNumber {
+
+}
+
+.toolArrows {
+
+}
+
+.toolKeyboard {
+
+}
+
+.toolSettings {
+    
 }
 
 /* Right Sidebar */
 #sidebarRight {
-    border-left: 1px solid black;
+    border-left: 1px solid #eceff1;
 
     /* Flexbox Styling */
     display: flex;
