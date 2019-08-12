@@ -6,6 +6,15 @@
         overflow: hidden;
     }
 
+    a {
+        text-decoration: none;
+        color: #606469;
+     }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
 /* Material Icon Styling */
     .material-icons {
         font-family: 'Material Icons';
@@ -242,7 +251,9 @@
 
     .emailBox {
         font-family: 'Roboto', sans-serif;
-        font-size: 14px;
+        color: #777a7f;
+        font-size: .875rem;
+        letter-spacing: .2px;
         width: 97%;
         height: 2.5em;
         background-color: #f5f7f7;
@@ -251,6 +262,10 @@
         margin-left: .75em;
         border-collapse: collapse;
         align-items: center;
+    }
+
+    .emailBox b {
+        color: #2e2f32;
     }
 
 /* Email Table Styling */
@@ -363,7 +378,9 @@
        /* width: 90vw: */
         font-family: 'Roboto', sans-serif;
         color: #606469;
-        font-size: 10px;
+        font-size: .75rem;
+        letter-spacing: .3px;
+        line-height: 20px;
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
@@ -375,7 +392,9 @@
         /*width: 90vw;*/
         font-family: 'Roboto', sans-serif;
         color: #606469;
-        font-size: 10px;
+        font-size: .75rem;
+        letter-spacing: .3px;
+        line-height: 20px;
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
