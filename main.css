@@ -123,6 +123,7 @@
         border-radius: .5em;
         width: 53vw;
         height: 2.95em;
+        color: #6f6f70;
         /*
         margin-left: 9em;
         margin-right: 5em;
@@ -181,14 +182,49 @@
 
 /* Left Sidebar */
     #sidebarLeft {
-        border-right: 1px solid #eceff1;
+        /*border-right: 1px solid #eceff1;*/
 
         /* Flexbox Styling */
         display: flex;
-        flex-direction: ltr;
-        justify-content: center;
-        flex-basis: 5%;
-        float: left;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-basis: 7%;
+        float: center;
+    }
+
+    #gmailPlusButton {
+        margin-top: .25em;
+    }
+
+    .leftSideBarIcon {
+        margin-left: 1.65em;
+        margin-top: .3em;
+    }
+
+    .leftSideBarlabel1 {
+        margin-left: 1.65em;
+        margin-top: .3em;
+        color: #d46535;
+    }
+
+    .leftSideBarlabel2 {
+        margin-left: 1.65em;
+        margin-top: .3em;
+        color: #e3d7ff;
+    }
+
+    .leftSideBarlabel3 {
+        margin-left: 1.65em;
+        margin-top: .3em;
+        color: #4986e7;
+    }
+
+    .leftSideBarlabel4 {
+        margin-left: 1.65em;
+        margin-top: .3em;
+        color: #b3efd3;
     }
 
 /* Center Area */
@@ -197,7 +233,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;  
-        flex-basis: 95%;  
+        flex-basis: 100%;  
         flex-wrap: wrap;
         align-items: flex-start;
         position: relative;
@@ -207,18 +243,17 @@
     .emailBox {
         font-family: 'Roboto', sans-serif;
         font-size: 14px;
-        width: 95%;
+        width: 97%;
         height: 2.5em;
         background-color: #f5f7f7;
         border-top: 1px solid #eceff1;
         border-bottom: 1px solid #eceff1;
-        margin-left: 1em;
+        margin-left: .75em;
         border-collapse: collapse;
         align-items: center;
     }
 
-/* Table Styling */
-
+/* Email Table Styling */
     .checkBox {
         width: 4%;
         height: 100%;
@@ -256,7 +291,7 @@
     }
 
     .dateBox {
-        width: 10%;
+        width: 8%;
         height: 100%;
         padding: 5px;
     }
@@ -267,8 +302,8 @@
         height: 2em;
         margin-top: 8px;
         margin-bottom: 8px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 15px;
+        margin-right: 2em;
         font-family: 'Roboto', sans-serif;
         display: flex;
         flex-wrap: nowrap;
@@ -288,7 +323,7 @@
     }
 
     .toolRewind {
-        width: 10%;
+        width: 8%;
     }
 
     .toolMenu {
@@ -297,7 +332,7 @@
     }
 
     .toolEmpty {
-        width: 55%;
+        width: 50%;
         padding: 2px;
     }
 
@@ -313,20 +348,21 @@
     }
 
     .toolKeyboard {
-        width: 7%;
+        width: 6%;
         padding: 2px;
     }
 
     .toolSettings {
-        width: 3%;
+        width: 9%;
         padding: 2px;
     }
 
 /* Center Low Area Styling */
 
     #centerLowArea {
-        width: 90vw:
+       /* width: 90vw: */
         font-family: 'Roboto', sans-serif;
+        color: #606469;
         font-size: 10px;
         display: flex;
         flex-wrap: nowrap;
@@ -336,8 +372,9 @@
 
 /* Center LowER Area Styling */
     #centerLowerArea {
-        width: 90vw:
+        /*width: 90vw;*/
         font-family: 'Roboto', sans-serif;
+        color: #606469;
         font-size: 10px;
         display: flex;
         flex-wrap: nowrap;
@@ -357,14 +394,48 @@
     }
 
 /* Right Sidebar */
-#sidebarRight {
+    #sidebarRight {
     border-left: 1px solid #eceff1;
+    width: 90%;
+    color: #606469;
 
     /* Flexbox Styling */
     display: flex;
-    flex-direction: ltr;
-    justify-content: center;
-    flex-basis: 5%;
-    float: right;  
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-basis: 5%; 
+    }
 
-}
+    #calendarIcon {
+        height: 28px;
+        width: 24px;
+        margin-left: 16px;
+    }
+
+    #keepIcon {
+        height: 28px;
+        width: 24px;
+        margin-left: 16px;
+    }
+
+    #notesIcon {
+        height: 28px;
+        width: 24px;
+        margin-left: 16px;
+    }
+
+    .emptyRightDiv {
+        height: 30px;
+        width: 20px;
+    }
+    
+    .emptyRightDiv2 {
+        height: 75%;
+        width: 20px;
+        margin: 20px 20px 20x 20px;
+    }
+
+    .emptyRightDiv3 {
+
+    }
