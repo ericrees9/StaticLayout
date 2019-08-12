@@ -1,265 +1,360 @@
-body {
-    background-color: #ffffff;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
+/* Overall Body Styling */
+    body {
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
 
 /* Material Icon Styling */
-.material-icons {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;  /* Preferred icon size */
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-}
-.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
-.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+    .material-icons {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;  /* Preferred icon size */
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+        color: #767676;
+    }
+    .material-icons.md-dark { color: #767676; }
+    .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
 
-.menu {
-    padding: 12px;
-    height: 24px;
-    width: 24px;
-}
-.search {
-    padding: 12px;
-    height: 24px;
-    width: 24px;
-    float: left;
-    left: 50px;
-    justify-self: left;
-    left-margin: 40px;
-}
-.arrow_drop_down {
-    padding: 12px;
-    height: 24px;
-    width: 24px;
-    float: right;
-    justify-self: left;
-}
-.contact_support {
-    padding: 12px;
-    height: 24px;
-    width: 24px;
-}
-.apps {
-    padding-left: 40px;
-    padding-right: 40px;
-    height: 24px;
-    width: 24px;
-}
+    .menu {
+        padding: 12px;
+        height: 24px;
+        width: 24px;
+    }
+    .search {
+        padding: 12px;
+        height: 24px;
+        width: 24px;
+        float: left;
+        left: 50px;
+        justify-self: left;
+        left-margin: 40px;
+    }
+    .arrow_drop_down {
+        padding: 12px;
+        height: 24px;
+        width: 24px;
+        float: right;
+        justify-self: left;
+    }
+    .contact_support {
+        padding: 12px;
+        height: 24px;
+        width: 24px;
+    }
+    .apps {
+        padding-left: 40px;
+        padding-right: 40px;
+        height: 24px;
+        width: 24px;
+    }
 
 
 /* Top Nav Bar */
-#topNav {
-    border-bottom: 1px solid #eceff1;
-    border-width: 90%;
-    height: 9vh;
-    width: 100%;
-    
-    /* Flexbox Styling */
-    display: flex;
-    flex-direction: ltr;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+    #topNav {
+        border-bottom: 1px solid #eceff1;
+        border-width: 90%;
+        height: 9.6vh;
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        
+        /* Flexbox Styling */
+        display: flex;
+        flex-direction: ltr;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
 
-}
-#leftTopNav {
-    float: left;
+    }
 
-    /* Flexbox Styling */
-    display: flex;
-    flex-direction: ltr;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-}
-#centerTopNav {
+/* Style and Spacing for Top Left Corner of Nav */
+    #leftTopNav {
+        float: left;
 
-}
-#rightTopNav {
-    float: right;
+        /* Flexbox Styling */
+        display: flex;
+        flex-basis: 24vw;
+        flex-direction: ltr;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
 
-    /* Flexbox Styling */
-    display: flex;
-    flex-direction: rtl;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: center;
-}
+    #leftTopSpace {
+        width: 0px;
+    }
 
-#searchBar {
-    background-color: #f1f3f4;
-    border-radius: .5em;
-    height: 3em;
-    width: 55vw;
-    margin-left: 9em;
-    margin-right: 5em;
-    
-    /* Flexbox Styling */
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    #centerTopNav {
 
-}
+    }
+
+/* Style and Spacing for Right Top Corner of Nav Bar */
+    #rightTopNav {
+        float: right;
+
+        /* Flexbox Styling */
+        display: flex;
+        flex-basis: 20vw;
+        flex-direction: rtl;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #rightRightSpace {
+        width: 18px;
+    }
+
+    #rightLeftSpace {
+        width: 18px;
+    }
+
+/* Style and Spacing for Search Bar in Nav Bar */
+    #searchBar {
+        background-color: #f1f3f4;
+        border-radius: .5em;
+        width: 53vw;
+        height: 2.95em;
+        /*
+        margin-left: 9em;
+        margin-right: 5em;
+        */ 
+        /* Flexbox Styling */
+        display: flex;
+        flex-basis: 55vw;
+        align-items: center;
+        justify-content: flex-start;
+
+    }
+
+    #leftSearchSpace {
+        width: 20px;
+    }
+
+    #leftMiddleSearchSpace {
+        width: 15px;
+    }
+
+    #middleSearchSpace {
+        width: 38.5vw;
+    }
 
 /* Gmail Logo */
 #gmailLogo {
     height: 40px;
     padding-left: 16px;
-    padding-right: 10%;
+    padding-right: 15%;
 }
 
-#profilePhoto {
-    height: 40px;
-    width: 40px;
-    border-radius: 50% 50% 50% 50%;
-    border-width: 10px 10px 10px 10px;
-    border-top-color: #e92c18;
-    border-right-color: #3174f1;
-    border-bottom-color: #239a41;
-    border-left-color: #f6ad01;
-}
+/* Profile Photo Styling */
+    #profilePhoto {
+        height: 36px;
+        width: 36px;
+        border-radius: 50% 50% 50% 50%;
+        border-width: 20px 20px 20px 20px;
+        border-top-color: #e92c18;
+        border-right-color: #3174f1;
+        border-bottom-color: #239a41;
+        border-left-color: #f6ad01;
+    }
 
 /* Container Div */
-#mainNav {
-    height: 91vh;
-    width: 100%;
+    #mainNav {
+        height: 91vh;
+        width: 100%;
 
-    /* Flexbox Styling */
-    display: flex;
-    flex-direction: ltr;
-    flex-wrap: nowrap;
-    justify-content: center;
+        /* Flexbox Styling */
+        display: flex;
+        flex-direction: ltr;
+        flex-wrap: nowrap;
+        justify-content: center;
 
-}
+    }
 
 /* Left Sidebar */
-#sidebarLeft {
-    border-right: 1px solid #eceff1;
+    #sidebarLeft {
+        border-right: 1px solid #eceff1;
 
-    /* Flexbox Styling */
-    display: flex;
-    flex-direction: ltr;
-    justify-content: center;
-    flex-basis: 5%;
-    float: left;
-}
+        /* Flexbox Styling */
+        display: flex;
+        flex-direction: ltr;
+        justify-content: center;
+        flex-basis: 5%;
+        float: left;
+    }
 
 /* Center Area */
-#centerArea {
+    #centerArea {
+        /* Flexbox Styling */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        flex-basis: 95%;  
+        flex-wrap: wrap;
+        align-items: flex-start;
+        position: relative;
+        justify-content: flex-start;
+    }
 
-
-    /* Flexbox Styling */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  
-    flex-basis: 95%;  
-    flex-wrap: wrap;
-    align-items: flex-start;
-    position: relative;
-}
-
-.emailBox {
-    width: 95%;
-    height: 2em;
-    border-top: 1px solid #eceff1;
-    border-bottom: 1px solid #eceff1;
-    padding: 0;
-    margin-left: 1em;
-    border-collapse: collapse;
-}
+    .emailBox {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        width: 95%;
+        height: 2.5em;
+        background-color: #f5f7f7;
+        border-top: 1px solid #eceff1;
+        border-bottom: 1px solid #eceff1;
+        margin-left: 1em;
+        border-collapse: collapse;
+        align-items: center;
+    }
 
 /* Table Styling */
 
-.checkBox {
-    width: 4%;
-    height: 100%;
-    padding: 5px;
-}
+    .checkBox {
+        width: 4%;
+        height: 100%;
+        padding: 5px;
+    }
 
-.star {
-    width: 3%;
-    height: 100%;
-    padding: 5px;
-}
+    .star {
+        width: 3%;
+        height: 100%;
+        padding: 5px;
+    }
 
-.priorityBox {
-    width: 3%;
-    height: 100%;
-    padding: 5px;
-}
+    .priorityBox {
+        width: 3%;
+        height: 100%;
+        padding: 5px;
+    }
 
-.nameBox {
-    width: 15%;
-    height: 100%;
-    padding: 5px;
-}
+    .nameBox {
+        width: 15%;
+        height: 100%;
+        padding: 5px;
+    }
 
-.emailContent {
-    width: 55%;
-    height: 100%;
-    padding: 5px;
-}
+    .emailContent {
+        width: 55%;
+        height: 100%;
+        padding: 5px;
+    }
 
-.attachmentBox {
-    width: 5%;
-    height: 100%;
-    padding: 5px;
-}
+    .attachmentBox {
+        width: 5%;
+        height: 100%;
+        padding: 5px;
+    }
 
-.dateBox {
-    width: 10%;
-    height: 100%;
-    padding: 5px;
-}
+    .dateBox {
+        width: 10%;
+        height: 100%;
+        padding: 5px;
+    }
 
 /* Center Toolbox Styling */
-#toolBar {
-    width: 95%;
-    height: 2em;
-    padding: 2px;
-    margin: 0;
-}
+    #toolBar {
+        width: 100%;
+        height: 2em;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        float: left;
+        border-spacing: 4px;
+        left: 10px;
+    }
 
-.toolcheckBox {
+    .toolcheckBox {
+        width: .5%;
+        border-spacing: 1px;
+    }
 
-}
+    .toolArrowDown {
+        width: .2%;
+    }
 
-.toolRewind {
+    .toolRewind {
+        width: 10%;
+    }
 
-}
+    .toolMenu {
+        width: 2%;
+        padding: 2px;
+    }
 
-.toolMenu {
+    .toolEmpty {
+        width: 55%;
+        padding: 2px;
+    }
 
-}
+    .toolEmailNumber {
+        width: 7%;
+        padding: 2px;
+        font-size: 12px;
+    }
 
-.toolEmpty {
+    .toolArrows {
+        width: 7%;
+        padding: 2px;
+    }
 
-}
+    .toolKeyboard {
+        width: 7%;
+        padding: 2px;
+    }
 
-.toolEmailNumber {
+    .toolSettings {
+        width: 3%;
+        padding: 2px;
+    }
 
-}
+/* Center Low Area Styling */
 
-.toolArrows {
+    #centerLowArea {
+        width: 90vw:
+        font-family: 'Roboto', sans-serif;
+        font-size: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
 
-}
 
-.toolKeyboard {
+/* Center LowER Area Styling */
+    #centerLowerArea {
+        width: 90vw:
+        font-family: 'Roboto', sans-serif;
+        font-size: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
 
-}
+    #lowerContainerLeft {
+        float: left;
+    }
 
-.toolSettings {
-    
-}
+    #lowerContainerCenter {
+
+    }
+
+    #lowerContainerRight {
+        float: right;
+    }
 
 /* Right Sidebar */
 #sidebarRight {

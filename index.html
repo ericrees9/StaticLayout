@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <title>GMail Static Page</title>
 </head>
 <body>
@@ -14,21 +15,27 @@
 <div id="topNav">
     <!-- Splitting the top nav into three divs to get the spacing better. Elements in the Left Top Nav Div -->
     <div id="leftTopNav">
+        <div id="leftTopSpace"></div>
         <i class="material-icons">menu</i>
         <img id="gmailLogo" src="../StaticLayout/assets/logo_gmail_lockup_default_2x.png">
     </div>   
     <!-- Elements in the Middle Top Nav Div -->
     <div id="centerTopNav"> 
         <div id="searchBar">
+                <div id="leftSearchSpace"></div>
                 <i class="material-icons">search</i>
-                <p align="left">Search mail</p>
+                <div id="leftMiddleSearchSpace"></div>
+                <p style="align-content: left">Search mail</p>
+                <div id="middleSearchSpace"></div>
                 <i class="material-icons">arrow_drop_down</i>
         </div>
     </div>
     <!-- Elements in the Right Top Nav Div -->
-    <div id="rightTopNav"></div>
+    <div id="rightTopNav">
         <i class="material-icons">contact_support</i>
+        <div id="rightLeftSpace"></div>
         <i class="material-icons">apps</i>
+        <div id="rightRightSpace"></div>
         <img id="profilePhoto" src="../StaticLayout/assets/ericPhoto.jpg">
     </div>
 </div>
@@ -44,151 +51,251 @@
         <!-- Center Area-->
         <div id="centerArea">
             <div id="toolBar" style="align:center">
-                <table style="width:100%" margin="auto 0 auto 0">
+                <table style="width:90%" align="center" margin="auto 0 auto 0">
                         <tr>
-                            <td class="toolcheckBox">Box</td>
-                            <td class="toolRewind">Star</td>
-                            <td class="toolMenu">Highlight</td> 
-                            <td class="toolEmpty">Name</td>
-                            <td class="toolEmailNumber">Email</td>
-                            <td class="toolArrows">Att</td>
-                            <td class="toolKeyboard">Date</td> 
-                            <td class="toolSettings">Date</td> 
+                            <td class="toolcheckBox">
+                                <i class="material-icons">crop_square</i>
+                            </td>
+                            <td class="toolArrowDown"> 
+                                    <i class="material-icons">arrow_drop_down</i>
+                                </td>
+                            <td class="toolRewind"> 
+                                <i class="material-icons">refresh</i>
+                            </td>
+                            <td class="toolMenu">  
+                                <i class="material-icons">more_vert</i>
+                            </td> 
+                            <td class="toolEmpty">        </td>
+                            <td class="toolEmailNumber">
+                                1-10 of 10
+                            </td>
+                            <td class="toolArrows">
+                                <i class="material-icons">keyboard_arrow_left</i>
+                                <i class="material-icons">keyboard_arrow_right</i>
+                            </td>
+                            <td class="toolKeyboard">
+                                <i class="material-icons">keyboard</i>
+                                <i class="material-icons">arrow_drop_down</i>
+                            </td> 
+                            <td class="toolSettings">
+                                <i class="material-icons">settings</i>
+                            </td> 
                         </tr>   
                 </table>  
             </div>
             <div class="emailBox">
-                <table style="width:100%" margin="auto 0 auto 0">
+                <table style="width:100%" margin="auto">
                     <tr>
-                        <td class="checkBox">Box</td>
-                        <td class="star">Star</td>
-                        <td class="priorityBox">Highlight</td> 
-                        <td class="nameBox">Name</td>
-                        <td class="emailContent">Email</td>
-                        <td class="attachmentBox">Att</td>
-                        <td class="dateBox">Date</td> 
+                        <td class="checkBox">
+                            <i class="material-icons">crop_square</i>
+                        </td>
+                        <td class="star">
+                            <i class="material-icons">star_border</i>
+                        </td>
+                        <td class="priorityBox">
+                            <i class="material-icons">label_important</i>
+                        </td> 
+                        <td class="nameBox">Robin Rees</td>
+                        <td class="emailContent">Fwd: “How I started learning to code: the resources I’ve used in the first three months” publis...</td>
+                        <td class="attachmentBox"></td>
+                        <td class="dateBox">10:12 AM</td> 
                     </tr>   
                 </table>   
             </div>
             <div class="emailBox">
                 <table style="width:100%">
                         <tr>
-                            <td class="checkBox">Box</td>
-                            <td class="star">Star</td>
-                            <td class="priorityBox">Highlight</td> 
-                            <td class="nameBox">Name</td>
-                            <td class="emailContent">Email</td>
-                            <td class="attachmentBox">Att</td>
-                            <td class="dateBox">Date</td> 
+                            <td class="checkBox">
+                                <i class="material-icons">crop_square</i>
+                            </td>
+                            <td class="star">
+                                <i class="material-icons">star_border</i>
+                            </td>
+                            <td class="priorityBox">
+                                <i class="material-icons">label_important</i>
+                            </td> 
+                            <td class="nameBox">Smith, Michael</td>
+                            <td class="emailContent"><b>Pacers Offseason</b> - Good morning Eric, I hope you have been having a great summer. I just w... </td>
+                            <td class="attachmentBox"></td>
+                            <td class="dateBox">8:55 AM</td>
                         </tr>   
                 </table>
             </div>
             <div class="emailBox">
                 <table style="width:100%">
                         <tr>
-                            <td class="checkBox">Box</td>
-                            <td class="star">Star</td>
-                            <td class="priorityBox">Highlight</td> 
-                            <td class="nameBox">Name</td>
-                            <td class="emailContent">Email</td>
-                            <td class="attachmentBox">Att</td>
-                            <td class="dateBox">Date</td> 
+                            <td class="checkBox">
+                                <i class="material-icons">crop_square</i>
+                            </td>
+                            <td class="star">
+                                <i class="material-icons">star_border</i>
+                            </td>
+                            <td class="priorityBox">
+                                <i class="material-icons">label_important</i>
+                            </td> 
+                            <td class="nameBox">Bungie</td>
+                            <td class="emailContent"><b>lNDlANABONES, all your progress comes with you starting in October.</b> - Starting this Octob...</td>
+                            <td class="attachmentBox"></td>
+                            <td class="dateBox">Aug 8</td>
                         </tr>   
                 </table>
             </div>
             <div class="emailBox">
                 <table style="width:100%">
                         <tr>
-                            <td class="checkBox">Box</td>
-                            <td class="star">Star</td>
-                            <td class="priorityBox">Highlight</td> 
-                            <td class="nameBox">Name</td>
-                            <td class="emailContent">Email</td>
-                            <td class="attachmentBox">Att</td>
-                            <td class="dateBox">Date</td> 
+                            <td class="checkBox">
+                                <i class="material-icons">crop_square</i>
+                            </td>
+                            <td class="star">
+                                <i class="material-icons">star_border</i>
+                            </td>
+                            <td class="priorityBox">
+                                <i class="material-icons">label_important</i>
+                            </td> 
+                            <td class="nameBox">Nintendo</td>
+                            <td class="emailContent"><b>One or more items on your Wish List just went on sale</b> - You deserve a treat. Trouble viewing t... </td>
+                            <td class="attachmentBox"></td>
+                            <td class="dateBox">Aug 7</td> 
                         </tr>   
                 </table>
             </div>
             <div class="emailBox">
                 <table style="width:100%">
                         <tr>
-                            <td class="checkBox">Box</td>
-                            <td class="star">Star</td>
-                            <td class="priorityBox">Highlight</td> 
-                            <td class="nameBox">Name</td>
-                            <td class="emailContent">Email</td>
-                            <td class="attachmentBox">Att</td>
-                            <td class="dateBox">Date</td> 
+                            <td class="checkBox">
+                                <i class="material-icons">crop_square</i>
+                            </td>
+                            <td class="star">
+                                <i class="material-icons">star_border</i>
+                            </td>
+                            <td class="priorityBox">
+                                <i class="material-icons">label_important</i>
+                            </td> 
+                            <td class="nameBox">Catalyst Consulting</td>
+                            <td class="emailContent"><b>Invoice #927</b> - Please find the attached invoice. You can make payment by clicking the Pay Onl...</td>
+                            <td class="attachmentBox">
+                                <i class="material-icons">attachment</i>
+                            </td>
+                            <td class="dateBox">Aug 5</td> 
                         </tr>   
                 </table>
             </div>
             <div class="emailBox">
                 <table style="width:100%">
                         <tr>
-                            <td class="checkBox">Box</td>
-                            <td class="star">Star</td>
-                            <td class="priorityBox">Highlight</td> 
-                            <td class="nameBox">Name</td>
-                            <td class="emailContent">Email</td>
-                            <td class="attachmentBox">Att</td>
-                            <td class="dateBox">Date</td> 
+                            <td class="checkBox">
+                                <i class="material-icons">crop_square</i>
+                            </td>
+                            <td class="star">
+                                <i class="material-icons">star_border</i>
+                            </td>
+                            <td class="priorityBox">
+                                <i class="material-icons">label_important</i>
+                            </td> 
+                            <td class="nameBox">Christina Rees</td>
+                            <td class="emailContent"><b>Fwd: Back to School 2019 Alumni Newsletter</b> - There is 10 year reunion information on here if... </td>
+                            <td class="attachmentBox"></td>
+                            <td class="dateBox">Aug 3</td>  
                         </tr>   
                 </table>
             </div>
             <div class="emailBox">
                 <table style="width:100%">
                         <tr>
-                            <td class="checkBox">Box</td>
-                            <td class="star">Star</td>
-                            <td class="priorityBox">Highlight</td> 
-                            <td class="nameBox">Name</td>
-                            <td class="emailContent">Email</td>
-                            <td class="attachmentBox">Att</td>
-                            <td class="dateBox">Date</td> 
+                            <td class="checkBox">
+                                <i class="material-icons">crop_square</i>
+                            </td>
+                            <td class="star">
+                                <i class="material-icons">star_border</i>
+                            </td>
+                            <td class="priorityBox">
+                                <i class="material-icons">label_important</i>
+                            </td> 
+                            <td class="nameBox">Smith, Amber</td>
+                            <td class="emailContent"><b>Fwd: Meet the new Google Fi</b> - ---------- Forwarded message --------- From: Google Fi Date: Wed</td>
+                            <td class="attachmentBox">
+                                <i class="material-icons">attachment</i>
+                            </td>
+                            <td class="dateBox">Jul 31</td>   
                         </tr>   
                 </table>
             </div>
             <div class="emailBox">
                 <table style="width:100%">
                         <tr>
-                            <td class="checkBox">Box</td>
-                            <td class="star">Star</td>
-                            <td class="priorityBox">Highlight</td> 
-                            <td class="nameBox">Name</td>
-                            <td class="emailContent">Email</td>
-                            <td class="attachmentBox">Att</td>
-                            <td class="dateBox">Date</td> 
+                            <td class="checkBox">
+                                <i class="material-icons">crop_square</i>
+                            </td>
+                            <td class="star">
+                                <i class="material-icons">star_border</i>
+                            </td>
+                            <td class="priorityBox">
+                                <i class="material-icons">label_important</i>
+                            </td> 
+                            <td class="nameBox">polinaosherov</td>
+                            <td class="emailContent"><b>Invitation: Editorial meeting @ Thu Aug 1, 2019 1pm - 2pm (EDT) erees1@gmail.com</b> - poli...</td>
+                            <td class="attachmentBox">
+                                <i class="material-icons">attachment</i>
+                            </td>
+                            <td class="dateBox">Jul 18</td>  
                         </tr>   
                 </table>
             </div>
             <div class="emailBox">
                 <table style="width:100%">
                         <tr>
-                            <td class="checkBox">Box</td>
-                            <td class="star">Star</td>
-                            <td class="priorityBox">Highlight</td> 
-                            <td class="nameBox">Name</td>
-                            <td class="emailContent">Email</td>
-                            <td class="attachmentBox">Att</td>
-                            <td class="dateBox">Date</td> 
+                            <td class="checkBox">
+                                <i class="material-icons">crop_square</i>
+                            </td>
+                            <td class="star">
+                                <i class="material-icons">star_border</i>
+                            </td>
+                            <td class="priorityBox">
+                                <i class="material-icons">label_important</i>
+                            </td> 
+                            <td class="nameBox">Postmates</td>
+                            <td class="emailContent"><b>Last chance: Dodge tariffs with 10% off.</b> - app.postmates.com/wtf/click?upn=-2Bmlr4g-2B83...</td>
+                            <td class="attachmentBox"></td>
+                            <td class="dateBox">July 18</td>   
                         </tr>   
                 </table>
             </div>
             <div class="emailBox">
                 <table style="width:100%">
                         <tr>
-                            <td class="checkBox">Box</td>
-                            <td class="star">Star</td>
-                            <td class="priorityBox">Highlight</td> 
-                            <td class="nameBox">Name</td>
-                            <td class="emailContent">Email</td>
-                            <td class="attachmentBox">Att</td>
-                            <td class="dateBox">Date</td> 
+                            <td class="checkBox">
+                                <i class="material-icons">crop_square</i>
+                            </td>
+                            <td class="star">
+                                <i class="material-icons">star_border</i>
+                            </td>
+                            <td class="priorityBox">
+                                <i class="material-icons">label_important</i>
+                            </td> 
+                            <td class="nameBox">Nextdoor Fountain Sq.</td>
+                            <td class="emailContent"><b>Top post: Cleaning Peson</b> - Next Door Fountain Square Digest - TODAY'S TOP POSTS --------------...</td>
+                            <td class="attachmentBox"></td>
+                            <td class="dateBox">Jun 30</td>  
                         </tr>   
                 </table>
+
+            <!-- Lower Center Area-->
+            <br />
+            <br />
+            <div id="centerLowArea">
+                <div id="lowContainerLeft">27.89 GB (23%) of 120 GB used</div>
+                <div id="lowContainerCenter">Terms · Privacy · Program Policies</div>
+                <div id="lowContainerRight">Last account activity: 0 minutes ago</div>
+            </div>    
+            <div id="centerLowerArea">
+                <div id="lowerContainerLeft">Manage</div>
+                <div id="lowerContainerCenter"></div>
+                <div id="lowerContainerRight">Open in 1 other location · Details</div>
+            </div>
+                
             </div>
         </div>
-
+        
         <!-- Right Sidebar -->
         <div id="sidebarRight">
             <p>Right sidebar</p>
